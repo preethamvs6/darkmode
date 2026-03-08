@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app
+    version="3.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd ">
+
+  <display-name>FortunePortlet</display-name>
+
+  <description>Automated generated Application Wrapper</description>
+
+  <servlet>
+    <description>Generated Portlet Wrapper</description>
+    <display-name>Indigo Portlet</display-name>
+    <servlet-name>Indigo</servlet-name>
+    <servlet-class>org.apache.pluto.core.PortletServlet</servlet-class>
+
+    <init-param>
+      <param-name>portlet-class</param-name>
+      <param-value>infy.Indigo</param-value>
+    </init-param>
+
+    <init-param>
+      <param-name>portlet-guid</param-name>
+      <param-value>yourportlet.Indigo</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Indigo</servlet-name>
+    <url-pattern>/Indigo/*</url-pattern>
+  </servlet-mapping>
+
+  <jsp-config>
+    <taglib>
+      <taglib-uri>http://java.sun.com/portlet</taglib-uri>
+      <taglib-location>/WEB-INF/tld/portlet.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+</web-app>
